@@ -15,19 +15,16 @@ Aqui estarão explicadas cada pergunta e como pensei em realizar cada questão, 
 </div>
 
 
-
-
-
 2)Quais pessoas não compareceram aos shows?
 
   Não houveram pessoas que não compareceram, uma vez que embora não tivessem feito compra efetiva de ingressos com a AT, há gastos, mesmo que mínimos, exaltados pela tabela psel-de-compras.
   
 3) Quais pessoas compraram ingressos com concorrentes?
     
+    <div align="center">
+<img src="https://user-images.githubusercontent.com/87606621/172722207-553754d5-26a3-4371-a482-7b5dd962501b.PNG" width="600px" />
+</div>
     
-  
-  
-  
  4) Qual o dia com maior gasto?
 
     Pelo resultado apontado pelo programa, o dia com maior movimentação financeira foi o dia 1.
