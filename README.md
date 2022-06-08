@@ -10,6 +10,10 @@ Aqui estarão explicadas cada pergunta e como pensei em realizar cada questão, 
   Nessa questão, minha idéia foi: juntarei a planilha 1 com a 2, e usarei condicionais, para verificar aqueles que efetivamente foram ao show e estavam na pista, e assim terei também como base gastos na mesma planilha, assim podendo aplicar .mean(), encontrando a média.
 
 
+<div align="center">
+<img src="https://user-images.githubusercontent.com/87606621/172057718-a63b9f24-12ab-4342-a85a-f2e2e53b53ce.PNG" width="370px" />
+</div>
+
 
 
 
