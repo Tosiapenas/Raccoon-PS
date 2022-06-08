@@ -1,3 +1,4 @@
+from unicodedata import name
 from matplotlib.font_manager import json_dump
 import matplotlib.pyplot as plt
 import numpy as np
@@ -22,25 +23,24 @@ df3 = pd.read_json(URL3)
 df4 = pd.merge(df, df2, how='inner', left_on='nome', right_on='nome')
 
 df_track = df4.loc[(df4['tipo'] == 'Pista') & (df4['status'] == 'Concluido')]
-df_absents = df.loc[df['status'] != 'Concluido'].drop_duplicates(subset=['nome'], keep='last').sort_values(by=['nome']) #absents without duplicates
-df_names = df_absents['nome'] #absents
-
+df_names = df4['nome']
+df_traitor = df4.drop(df4[(df4['status'] == 'Concluido')].index, inplace = False).drop_duplicates(subset='nome')
+final_dfNames = list(dict.fromkeys(df_names))
 
 #A
 print(df_track['gastos'].mean())
 print()
 
 #B
-print(len(df_names))
+print(df_traitor)
 print()
 
 #C
 df_competitor = df4[['nome', 'gastos', 'status']].copy()
-df_competitor = df_competitor.loc[df_competitor['status'] != 'Concluido'].groupby('nome').sum() # Through this, we see that many people didn't pay AT but went at any show, so the she/he bought with a competitor
+df_competitor = df_competitor.loc[(df_competitor['status'] != 'Concluido') & (df_competitor['gastos'] > 0)].drop_duplicates(subset='nome') # Through this, we see that many people didn't pay AT but went at any show, so the she/he bought with a competitor
 print(df_competitor)
 print()
 
-#D
 more_expensiveDay = (df4[['dia', 'gastos']].groupby('dia')).sum()
 print(more_expensiveDay.iloc[[0]])
 print()
@@ -59,8 +59,8 @@ plt.show()
 df_gastos = df4[['gastos', 'status']].groupby('gastos').sum()
 show_list = [show for show in df2['show']]
 money_list = [money for money in df2['gastos']]
-names_list = [name for name in df_absents['nome']]
+names_list = [name for name in final_dfNames]
 
 core_titles = [{"nome": i, "gastos": j, "shows": k} for i, j, k in zip(names_list, money_list, show_list)]
+
 print(json.dumps(core_titles))
-      
