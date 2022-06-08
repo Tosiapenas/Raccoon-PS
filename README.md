@@ -27,7 +27,17 @@ Aqui estarão explicadas cada pergunta e como pensei em realizar cada questão, 
     
  4) Qual o dia com maior gasto?
 
-    Pelo resultado apontado pelo programa, o dia com maior movimentação financeira foi o dia 1.
+    Pelo resultado apontado pelo programa, o dia com maior movimentação financeira foi o dia 1, visto pelo código e pelo gráfico
+    
+     <div align="center">
+<img src="https://user-images.githubusercontent.com/87606621/172722500-8444e0d1-30af-4e2a-b914-a8319016afc2.PNG" width="600px" />
+</div>
+
+     <div align="center">
+<img src="https://user-images.githubusercontent.com/87606621/172722490-5579b256-6418-473f-870e-fdeb27713353.PNG" width="600px" />
+</div>
+
+
     
 
  5) Faça uma lista com os clientes que desistiram de comprar o ingresso com a AT, a soma do valor que foi gasto durante os shows e quais shows eles desistiram de
