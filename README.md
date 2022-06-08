@@ -30,10 +30,7 @@ Aqui estarão explicadas cada pergunta e como pensei em realizar cada questão, 
     Pelo resultado apontado pelo programa, o dia com maior movimentação financeira foi o dia 1, visto pelo código e pelo gráfico
     
      <div align="center">
-<img src="https://user-images.githubusercontent.com/87606621/172722500-8444e0d1-30af-4e2a-b914-a8319016afc2.PNG" width="600px" />
-</div>
-
-     <div align="center">
+<img src="https://user-images.githubusercontent.com/87606621/172722500-8444e0d1-30af-4e2a-b914-a8319016afc2.PNG" width="600px" /><br>
 <img src="https://user-images.githubusercontent.com/87606621/172722490-5579b256-6418-473f-870e-fdeb27713353.PNG" width="600px" />
 </div>
 
@@ -43,4 +40,4 @@ Aqui estarão explicadas cada pergunta e como pensei em realizar cada questão, 
  5) Faça uma lista com os clientes que desistiram de comprar o ingresso com a AT, a soma do valor que foi gasto durante os shows e quais shows eles desistiram de
 comprar. Usar para resposta o esquema abaixo:
 
-  foram separados os clientes com status diferntes de concluido, para assim serem inseridos em listas, utilizando de list comprehension, após isso, foi-se utilizado a biblioteca json para criar o arquivo
+  foram separados os clientes com status diferentes de concluido, para assim serem inseridos em listas, utilizando de list comprehension, após isso, foi-se utilizado a biblioteca json para criar o arquivo
