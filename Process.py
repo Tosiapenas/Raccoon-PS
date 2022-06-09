@@ -22,14 +22,16 @@ df2 = pd.read_csv(URL2, sep=',')
 df3 = pd.read_json(URL3)
 df4 = pd.merge(df, df2, how='inner', left_on='nome', right_on='nome')
 
-df_track = df4.loc[(df4['tipo'] == 'Pista') & (df4['status'] == 'Concluido')]
+df_track = df4.loc[(df4['tipo'] == 'Pista')]
 df_names = df4['nome']
 df_traitor = df4.drop(df4[(df4['status'] == 'Concluido')].index, inplace = False).drop_duplicates(subset='nome')
 final_dfNames = list(dict.fromkeys(df_names))
 
+
 #A
 print(df_track['gastos'].mean())
 print()
+
 
 #B
 print(df_traitor)
