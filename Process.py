@@ -23,9 +23,8 @@ df3 = pd.read_json(URL3)
 df4 = pd.merge(df, df2, how='inner', left_on='nome', right_on='nome')
 
 df_track = df4.loc[(df4['tipo'] == 'Pista')]
-df_names = df4['nome']
 df_traitor = df4.drop(df4[(df4['status'] == 'Concluido')].index, inplace = False).drop_duplicates(subset='nome')
-final_dfNames = list(dict.fromkeys(df_names))
+df_day = df4[(df4['status'] != 'Concluido')]
 
 
 #A
@@ -43,7 +42,7 @@ df_competitor = df_competitor.loc[(df_competitor['status'] != 'Concluido') & (df
 print(df_competitor)
 print()
 
-more_expensiveDay = (df4[['dia', 'gastos']].groupby('dia')).sum()
+more_expensiveDay = (df4[['dia', 'gastos', 'status']].groupby('dia')).sum().sort_values(by='gastos', ascending=False)
 print(more_expensiveDay.iloc[[0]])
 print()
 
@@ -58,10 +57,9 @@ plt.bar(x,y)
 plt.show()
 
 #E
-df_gastos = df4[['gastos', 'status']].groupby('gastos').sum()
-show_list = [show for show in df2['show']]
-money_list = [money for money in df2['gastos']]
-names_list = [name for name in final_dfNames]
+show_list = [show for show in df_day['show']]
+money_list = [money for money in df_day['gastos']]
+names_list = [name for name in df_day['nome']]
 
 core_titles = [{"nome": i, "gastos": j, "shows": k} for i, j, k in zip(names_list, money_list, show_list)]
 
