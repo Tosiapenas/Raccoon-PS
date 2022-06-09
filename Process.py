@@ -2,7 +2,6 @@ from unicodedata import name
 from matplotlib.font_manager import json_dump
 import matplotlib.pyplot as plt
 import numpy as np
-import requests
 import pandas as pd
 import json
 
@@ -24,7 +23,7 @@ df4 = pd.merge(df, df2, how='inner', left_on='nome', right_on='nome')
 
 df_track = df4.loc[(df4['tipo'] == 'Pista')]
 df_traitor = df4.drop(df4[(df4['status'] == 'Concluido')].index, inplace = False).drop_duplicates(subset='nome')
-df_day = df4[(df4['status'] != 'Concluido')]
+df_days = df4[(df4['status'] != 'Concluido')]
 
 
 #A
@@ -57,9 +56,9 @@ plt.bar(x,y)
 plt.show()
 
 #E
-show_list = [show for show in df_day['show']]
-money_list = [money for money in df_day['gastos']]
-names_list = [name for name in df_day['nome']]
+show_list = [show for show in df_days['show']]
+money_list = [money for money in df_days['gastos']]
+names_list = [name for name in df_days['nome']]
 
 core_titles = [{"nome": i, "gastos": j, "shows": k} for i, j, k in zip(names_list, money_list, show_list)]
 
