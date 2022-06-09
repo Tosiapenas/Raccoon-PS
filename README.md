@@ -11,7 +11,7 @@ Aqui estarão explicadas cada pergunta e como pensei em realizar cada questão, 
 
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/87606621/172720747-2b5e0d9c-8e5f-4be3-91f8-43f5eabf9bae.PNG" width="600px" /><br>
+<img src="https://user-images.githubusercontent.com/87606621/172808919-2c788e20-2596-4c37-9b99-0860b789c23e.PNG" width="600px" /><br>
 <img src="https://user-images.githubusercontent.com/87606621/172808608-0c740c8d-8d81-4d73-84b5-40b6960268c5.PNG" width="300px" />
 </div>
 
