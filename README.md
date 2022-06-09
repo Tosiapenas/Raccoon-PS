@@ -12,7 +12,7 @@ Aqui estarão explicadas cada pergunta e como pensei em realizar cada questão, 
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/87606621/172720747-2b5e0d9c-8e5f-4be3-91f8-43f5eabf9bae.PNG" width="600px" /><br>
-<img src="https://user-images.githubusercontent.com/87606621/172737391-6f8da7f9-a14e-48d4-a264-03545189d47a.PNG" width="300px" />
+<img src="https://user-images.githubusercontent.com/87606621/172808608-0c740c8d-8d81-4d73-84b5-40b6960268c5.PNG" width="300px" />
 </div>
 
 2)Quais pessoas não compareceram aos shows?
