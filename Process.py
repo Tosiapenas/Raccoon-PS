@@ -22,24 +22,29 @@ df3 = pd.read_json(URL3)
 df4 = pd.merge(df, df2, how='inner', left_on='nome', right_on='nome')
 
 df_track = df4.loc[(df4['tipo'] == 'Pista')]
-df_traitor = df4.drop(df4[(df4['status'] == 'Concluido')].index, inplace = False).drop_duplicates(subset='nome')
+df_track_concluded = df4.loc[(df4['tipo'] == 'Pista') & (df4['status'] == 'Concluido')]
 df_days = df4[(df4['status'] != 'Concluido')]
 df_res = df_days.drop(df_days.columns[[0, 1, 2, 4, 5]], axis=1)
 
-#A
-print(df_track['gastos'].mean())
+
+#1)
+print('\nAmount cast without the concluded status: {:.2f}\nAmount cast with concluded status: {:.2f}'.format(df_track['gastos'].mean(), df_track_concluded['gastos'].mean()))
 print()
 
-#B
-print(df_traitor)
+
+#2)
+ 
+ # -> all people went at any show 'cause everyone cast some money 
+
+#3)
+print('\nPeople that didnt buy tickets with AT: \n')
+competitor_names = df4.loc[(df4['status'] != 'Concluido') & (df_res["gastos"] > 0), "nome"].drop_duplicates()
+competitor_names = competitor_names.drop([18, 30, 83, 115, 162, 262, 282, 295, 324, 336]) # names with 'Concluido' and 'Nao Concluido' or 'Problema no pagamento' either
+print(competitor_names)
 print()
 
-#C
-df_competitor = df4[['nome', 'gastos', 'status']].copy()
-df_competitor = df_competitor.loc[(df_competitor['status'] != 'Concluido') & (df_competitor['gastos'] > 0)].drop_duplicates(subset='nome') # Through this, we see that many people didn't pay AT but went at any show, so the she/he bought with a competitor
-print(df_competitor)
-print()
-
+#4)
+print('\nDay With biggest amount of casts: \n')
 more_expensiveDay = (df4[['dia', 'gastos', 'status']].groupby('dia')).sum().sort_values(by='gastos', ascending=False)
 print(more_expensiveDay.iloc[[0]])
 print()
@@ -54,11 +59,7 @@ plt.xlabel("Days")
 plt.bar(x,y)
 plt.show()
 
-#E
-show_list = [show for show in df_days['show']]
-money_list = [money for money in df_days['gastos']]
-names_list = [name for name in df_days['nome']]
-
+#5)
 result = df_res.to_json(orient="records")
 parsed = json.loads(result)
 print(json.dumps(parsed, indent=4))
