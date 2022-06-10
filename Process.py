@@ -22,7 +22,8 @@ df3 = pd.read_json(URL3)
 df4 = pd.merge(df, df2, how='inner', left_on='nome', right_on='nome')
 
 df_track = df4.loc[(df4['tipo'] == 'Pista')]
-df_track_concluded = df4.loc[(df4['tipo'] == 'Pista') & (df4['status'] == 'Concluido')]
+df_track_concluded = df4.loc[(df4['tipo'] == 'Pista') & (df4['status'] == 'Concluido')] # for analizing the difference beetween the mean of rows with 'pista' status and 'pista' and 'concluido' status
+
 df_days = df4[(df4['status'] != 'Concluido')]
 df_res = df_days.drop(df_days.columns[[0, 1, 2, 4, 5]], axis=1)
 
