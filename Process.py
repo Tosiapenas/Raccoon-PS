@@ -25,6 +25,10 @@ df_track = df4.loc[(df4['tipo'] == 'Pista')]
 df_traitor = df4.drop(df4[(df4['status'] == 'Concluido')].index, inplace = False).drop_duplicates(subset='nome')
 df_days = df4[(df4['status'] != 'Concluido')]
 
+df_res = df_days.drop(df_days.columns[[0, 1, 2, 4, 5]], axis=1)
+
+"""
+print(df4)
 
 #A
 print(df_track['gastos'].mean())
@@ -59,7 +63,10 @@ plt.show()
 show_list = [show for show in df_days['show']]
 money_list = [money for money in df_days['gastos']]
 names_list = [name for name in df_days['nome']]
+"""
 
-core_titles = [{"nome": i, "gastos": j, "shows": k} for i, j, k in zip(names_list, money_list, show_list)]
+print(df_res)
 
-print(json.dumps(core_titles))
+result = df_res.to_json(orient="records")
+parsed = json.loads(result)
+print(json.dumps(parsed, indent=4))
