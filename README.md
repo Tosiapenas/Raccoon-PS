@@ -11,8 +11,8 @@ Aqui estarão explicadas cada pergunta e como pensei em realizar cada questão, 
 
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/87606621/172817935-dd4d8e03-2a62-480f-a5fb-325d27a0d0b9.PNG" width="600px" /><br>
-<img src="https://user-images.githubusercontent.com/87606621/172808608-0c740c8d-8d81-4d73-84b5-40b6960268c5.PNG" width="300px" />
+<img src="https://user-images.githubusercontent.com/87606621/173205571-0b0f06c1-cbec-44fc-8cbe-b6bab2928bb0.PNG="600px" /><br>
+<img src="https://user-images.githubusercontent.com/87606621/173205571-0b0f06c1-cbec-44fc-8cbe-b6bab2928bb0.PNG" width="300px" />
 </div>
 
 2)Quais pessoas não compareceram aos shows?
@@ -34,10 +34,7 @@ Aqui estarão explicadas cada pergunta e como pensei em realizar cada questão, 
 <img src="https://user-images.githubusercontent.com/87606621/172722490-5579b256-6418-473f-870e-fdeb27713353.PNG" width="600px" />
 </div>
 
-
-    
-
  5) Faça uma lista com os clientes que desistiram de comprar o ingresso com a AT, a soma do valor que foi gasto durante os shows e quais shows eles desistiram de
 comprar. Usar para resposta o esquema abaixo:
 
-  foram separados os clientes com status diferentes de concluido, para assim serem inseridos em listas, utilizando de list comprehension, após isso, foi-se utilizado a biblioteca json para criar o arquivo
+  foram separados os clientes com status diferentes de concluido, para assim serem inseridos em listas, utilizando de list comprehension e lambda function (para os shows de cada um), após isso, foi criado um novo Dataframe com essas listas. Utilizou-se a função to_json() para estruturar o novo df e, assim, foi feito o print dos resultados.
