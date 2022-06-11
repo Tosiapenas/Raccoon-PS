@@ -35,7 +35,7 @@ print()
 
 #2)
  
- # -> all people went at any show 'cause everyone spent some money 
+ # -> all people went at any show 'cause everyone cast some money 
 
 #3)
 print('\nPeople that didnt buy tickets with AT: \n')
@@ -48,7 +48,6 @@ print()
 print('\nDay With biggest amount of casts: \n')
 more_expensiveDay = (df4[['dia', 'gastos', 'status']].groupby('dia', as_index=False)).sum().sort_values(by='gastos', ascending=False)
 print("Day {}: {}".format(more_expensiveDay['dia'][0], more_expensiveDay['gastos'][0]))
-print()
 print()
 
 # the graph helps us to verify that day 1 is the day where the people cast the biggest amount of money
