@@ -11,27 +11,27 @@ Aqui estarão explicadas cada pergunta e como pensei em realizar cada questão, 
 
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/87606621/173205571-0b0f06c1-cbec-44fc-8cbe-b6bab2928bb0.PNG="600px" /><br>
-<img src="https://user-images.githubusercontent.com/87606621/173205571-0b0f06c1-cbec-44fc-8cbe-b6bab2928bb0.PNG" width="300px" />
+    <img src="https://user-images.githubusercontent.com/87606621/173205548-6e993980-1ab1-4ab9-abde-5374f931042f.PNG" width="700px" /><br>
+    <img src="https://user-images.githubusercontent.com/87606621/173205571-0b0f06c1-cbec-44fc-8cbe-b6bab2928bb0.PNG" width="300px" />
 </div>
 
 2)Quais pessoas não compareceram aos shows?
 
-  Não houveram pessoas que não compareceram, uma vez que embora não tivessem feito compra efetiva de ingressos com a AT, há gastos, mesmo que mínimos, exaltados pela tabela psel-de-compras.
+  Não houveram pessoas que não compareceram, uma vez que existem aqueles que, embora não tivessem feito compra efetiva de ingressos com a AT, há gastos, mesmo que mínimos, exaltados pela tabela psel-de-compras.
   
 3) Quais pessoas compraram ingressos com concorrentes?
     
-    <div align="center">
-<img src="https://user-images.githubusercontent.com/87606621/172722207-553754d5-26a3-4371-a482-7b5dd962501b.PNG" width="600px" />
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/87606621/173205839-1fcfb63a-7a9e-4d1b-81d2-795caad98541.PNG" width="200px" />
 </div>
     
  4) Qual o dia com maior gasto?
 
     Pelo resultado apontado pelo programa, o dia com maior movimentação financeira foi o dia 1, visto pelo código e pelo gráfico
     
-     <div align="center">
-<img src="https://user-images.githubusercontent.com/87606621/172722500-8444e0d1-30af-4e2a-b914-a8319016afc2.PNG" width="600px" /><br>
-<img src="https://user-images.githubusercontent.com/87606621/172722490-5579b256-6418-473f-870e-fdeb27713353.PNG" width="600px" />
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/87606621/172722500-8444e0d1-30af-4e2a-b914-a8319016afc2.PNG" width="400px" /><br>
+    <img src="https://user-images.githubusercontent.com/87606621/172722490-5579b256-6418-473f-870e-fdeb27713353.PNG" width="400px" />
 </div>
 
  5) Faça uma lista com os clientes que desistiram de comprar o ingresso com a AT, a soma do valor que foi gasto durante os shows e quais shows eles desistiram de
