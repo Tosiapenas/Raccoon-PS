@@ -1,7 +1,9 @@
 from unicodedata import name
+from matplotlib import scale
 from matplotlib.font_manager import json_dump
 import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.ticker as plticker
 import pandas as pd
 import json
 
@@ -45,14 +47,15 @@ print()
 #4)
 print('\nDay With biggest amount of casts: \n')
 more_expensiveDay = (df4[['dia', 'gastos', 'status']].groupby('dia', as_index=False)).sum().sort_values(by='gastos', ascending=False)
-print("Day: {}".format(more_expensiveDay['gastos'][0]))
+print("Day {}: {}".format(more_expensiveDay['dia'][0], more_expensiveDay['gastos'][0]))
 print()
 print()
 
 # the graph helps us to verify that day 1 is the day where the people cast the biggest amount of money
 fig = plt.figure()
-x = np.array(["1", "2", "3"])
-y = np.array([258179.72, 255496.88, 128937.37])
+fig = plt.xticks(np.arange(0, 5))
+x = np.array([more_expensiveDay['dia'][0], more_expensiveDay['dia'][1], more_expensiveDay['dia'][2]])
+y = np.array([more_expensiveDay['gastos'][0], more_expensiveDay['gastos'][1], more_expensiveDay['gastos'][2]])
 plt.title("Money spent in shows")
 plt.ylabel("Amount of money spent")
 plt.xlabel("Days")
