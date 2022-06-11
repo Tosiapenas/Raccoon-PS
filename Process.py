@@ -35,7 +35,7 @@ print()
 
 #2)
  
- # -> all people went at any show 'cause everyone cast some money 
+ # -> all people went at any show 'cause everyone spent some money 
 
 #3)
 print('\nPeople that didnt buy tickets with AT: \n')
