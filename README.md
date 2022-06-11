@@ -30,8 +30,8 @@ Aqui estarão explicadas cada pergunta e como pensei em realizar cada questão, 
     Pelo resultado apontado pelo programa, o dia com maior movimentação financeira foi o dia 1, visto pelo código e pelo gráfico
     
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/87606621/172722500-8444e0d1-30af-4e2a-b914-a8319016afc2.PNG" width="400px" /><br>
-    <img src="https://user-images.githubusercontent.com/87606621/173207474-28142840-74e7-4897-9c2d-562abf932935.PNG" width="400px" />
+    <img src="https://user-images.githubusercontent.com/87606621/173207474-28142840-74e7-4897-9c2d-562abf932935.PNG" width="400px" /><br>
+    <img src="https://user-images.githubusercontent.com/87606621/173207638-4a845ba1-2e9e-4756-acf2-4b2149e29b81.PNG" width="600px" />
 </div>
 
  5) Faça uma lista com os clientes que desistiram de comprar o ingresso com a AT, a soma do valor que foi gasto durante os shows e quais shows eles desistiram de
