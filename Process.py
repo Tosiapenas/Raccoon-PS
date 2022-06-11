@@ -27,9 +27,8 @@ df_track_concluded = df4.loc[(df4['tipo'] == 'Pista') & (df4['status'] == 'Concl
 df_days = df4[(df4['status'] != 'Concluido')]
 df_res = df_days.drop(df_days.columns[[0, 1, 2, 4, 5]], axis=1)
 
-
 #1)
-print('\nAmount cast without the concluded status: {:.2f}\nAmount cast with concluded status: {:.2f}'.format(df_track['gastos'].mean(), df_track_concluded['gastos'].mean()))
+print('\nAmount cast without the concluded status: $${:.2f}\nAmount cast with concluded status: $${:.2f}'.format(df_track['gastos'].mean(), df_track_concluded['gastos'].mean()))
 print()
 
 #2)
@@ -69,7 +68,7 @@ competitor_values = df4.groupby('nome', as_index=False).sum()
 
 competitor_names = competitor_names.drop([18, 30, 83, 115, 162, 262, 282, 295, 324, 336]) # names with 'Concluido' and 'Nao Concluido' or 'Problema no pagamento' either
 competitor_values = competitor_values.drop([2, 5, 7, 8, 10, 12, 14, 16, 17,  21, 24, 27, 28, 31, 32, 33, 34, 36, 40, 42]) # names with 'Concluido' and 'Nao Concluido' or 'Problema no pagamento' either
-competitor_show = competitor_names_for_show.drop([18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 115,  162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206 , 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 262, 263, 264, 265, 282, 283, 284,295, 296, 297, 298, 299, 300, 301, 302, 303, 204, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 314, 324, 325, 336, 337, 338, 339, 340, 341, 342, 343, 344, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371])  #.loc[x:y].index
+competitor_show = competitor_names_for_show.drop(np.r_[18:35,83:98, 115:116, 162:173, 184:228, 262:266, 282:285, 295:315, 324:326,  336:345, 354:372]) #with groupby or lambda function, the array of lists was bigger than the others, so would be impossible to create the df
 competitor_show = competitor_show.groupby('nome').apply(lambda grupo: grupo.show.tolist()).tolist()
 
 dict_list = {'nome': [name for name in competitor_names], 'gastos': [value for value in competitor_values['gastos']], 'shows': [shows for shows in competitor_show]}
