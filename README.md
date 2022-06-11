@@ -31,7 +31,7 @@ Aqui estarão explicadas cada pergunta e como pensei em realizar cada questão, 
     
 <div align="center">
     <img src="https://user-images.githubusercontent.com/87606621/172722500-8444e0d1-30af-4e2a-b914-a8319016afc2.PNG" width="400px" /><br>
-    <img src="https://user-images.githubusercontent.com/87606621/172722490-5579b256-6418-473f-870e-fdeb27713353.PNG" width="400px" />
+    <img src="https://user-images.githubusercontent.com/87606621/173207474-28142840-74e7-4897-9c2d-562abf932935.PNG" width="400px" />
 </div>
 
  5) Faça uma lista com os clientes que desistiram de comprar o ingresso com a AT, a soma do valor que foi gasto durante os shows e quais shows eles desistiram de
