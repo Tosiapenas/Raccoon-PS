@@ -53,7 +53,7 @@ print()
 # the graph helps us to verify that day 1 is the day where the people cast the biggest amount of money
 fig = plt.figure()
 fig = plt.xticks(np.arange(0, 5))
-fig = plt.yticks(np.arange(0, 260000, 30000))
+fig = plt.yticks(np.arange(0, 270000, 25000))
 x = np.array([more_expensiveDay['dia'][0], more_expensiveDay['dia'][1], more_expensiveDay['dia'][2]])
 y = np.array([more_expensiveDay['gastos'][0], more_expensiveDay['gastos'][1], more_expensiveDay['gastos'][2]])
 plt.title("Money spent in shows")
